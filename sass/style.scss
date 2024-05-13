@@ -1,0 +1,174 @@
+@use 'variable.scss';
+
+body{
+    width: 100%;
+    height: 100%;
+    background: variable.$bck;
+    font-family: "IBM Plex Mono", monospace;
+    overflow-x: hidden;
+    position: relative;
+}
+
+// datos generales
+
+h3,h2{
+    font-family: "Press Start 2P", system-ui;
+}
+
+h3{
+    font-size: 24px;
+}
+// contenedor principal
+
+.contenedor_principal{
+    width: auto;
+}
+
+// header y .pie_de_pagina
+
+.contenedor_encabezado,
+.titulo_pie_de_pagina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    .heart_pixel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 30px;
+        }
+    }
+}
+
+.contenedor_encabezado,
+.pie_de_pagina{
+    width: 100%;
+    text-align: center;
+    background: variable.$purple-400;
+    padding: 16px 0px;
+    color: variable.$bck;
+}
+
+// contenido
+
+.contenido{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    padding: 50px 0px;
+    position: relative;
+}
+
+// productos
+
+.bloque_producto{
+    // width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding:0px 35px;
+    flex-direction: column;
+    .contenedor_productos{
+        width: 700px;
+        height: 100vh;
+        display: flex;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        gap: 16px;
+        overflow-y:scroll;
+        .card{
+            width: 180px;
+            height: 260px;
+            background: variable.$purple-400;
+            border: 3px solid variable.$black;
+            color: variable.$bck;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .img-contenedor{
+                // width: auto;
+                height: 200px;
+                background: variable.$scroll-color;
+                border: 3px solid variable.$black;
+                border-radius: 10px;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .precios{
+                display: flex;
+                justify-content: space-between;
+                font-weight: bold;
+                i:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+// bloque formulario
+
+.bloque_formulario{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:0px 35px;
+    [data-formulario]{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        // gap: 40px;
+        // width: 80%;
+        .campos{
+            display: inherit;
+            flex-direction: column;
+            margin: 40px 0px;
+            gap: 40px;
+            input{
+                width: 400px;
+                padding: 10px 15px;
+                border: 3px solid variable.$blue;
+                border-radius: 30px;
+            }
+        }
+        .btn{
+            display: flex;
+            justify-content: space-around;
+            color: variable.$bck;
+            font-weight: bold;
+            button{
+                width: 190px;
+                height: 60px;
+                border: 3px solid variable.$blue;
+                border-radius: 15px;
+                background: variable.$blue;
+                transition: all .3s ease;
+                cursor: pointer;
+            }
+            button:nth-child(2){
+                background: none;
+                color: variable.$blue;
+            }
+            button:hover:nth-child(2){
+                background: variable.$blue;
+                color: variable.$bck;
+                
+            }
+        }
+    }
+}
+
+//pie de pagina 
+
+.pie_de_pagina{
+    padding: 64px 0px;
+}

@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap");
+body {
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  font-family: "IBM Plex Mono", monospace;
+  overflow-x: hidden;
+  position: relative;
+}
+
+h3, h2 {
+  font-family: "Press Start 2P", system-ui;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.contenedor_principal {
+  width: auto;
+}
+
+.contenedor_encabezado,
+.titulo_pie_de_pagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.contenedor_encabezado .heart_pixel,
+.titulo_pie_de_pagina .heart_pixel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor_encabezado .heart_pixel img,
+.titulo_pie_de_pagina .heart_pixel img {
+  width: 30px;
+}
+
+.contenedor_encabezado,
+.pie_de_pagina {
+  width: 100%;
+  text-align: center;
+  background: #5300C8;
+  padding: 16px 0px;
+  color: #FFFFFF;
+}
+
+.contenido {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+  position: relative;
+}
+
+.bloque_producto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px 35px;
+  flex-direction: column;
+}
+.bloque_producto .contenedor_productos {
+  width: 700px;
+  height: 100vh;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  gap: 16px;
+  overflow-y: scroll;
+}
+.bloque_producto .contenedor_productos .card {
+  width: 180px;
+  height: 260px;
+  background: #5300C8;
+  border: 3px solid #000000;
+  color: #FFFFFF;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bloque_producto .contenedor_productos .card .img-contenedor {
+  height: 200px;
+  background: #D6D6D6;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bloque_producto .contenedor_productos .card .precios {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.bloque_producto .contenedor_productos .card .precios i:hover {
+  cursor: pointer;
+}
+
+.bloque_formulario {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 35px;
+}
+.bloque_formulario [data-formulario] {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.bloque_formulario [data-formulario] .campos {
+  display: inherit;
+  flex-direction: column;
+  margin: 40px 0px;
+  gap: 40px;
+}
+.bloque_formulario [data-formulario] .campos input {
+  width: 400px;
+  padding: 10px 15px;
+  border: 3px solid #03318C;
+  border-radius: 30px;
+}
+.bloque_formulario [data-formulario] .btn {
+  display: flex;
+  justify-content: space-around;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+.bloque_formulario [data-formulario] .btn button {
+  width: 190px;
+  height: 60px;
+  border: 3px solid #03318C;
+  border-radius: 15px;
+  background: #03318C;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.bloque_formulario [data-formulario] .btn button:nth-child(2) {
+  background: none;
+  color: #03318C;
+}
+.bloque_formulario [data-formulario] .btn button:hover:nth-child(2) {
+  background: #03318C;
+  color: #FFFFFF;
+}
+
+.pie_de_pagina {
+  padding: 64px 0px;
+}
+
+/*# sourceMappingURL=style.css.map */
