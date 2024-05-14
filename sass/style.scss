@@ -78,6 +78,7 @@ h3{
         display: flex;
         flex-grow: 1;
         flex-wrap: wrap;
+        // flex-direction: row-reverse;
         gap: 16px;
         overflow-y:scroll;
         .card{
@@ -94,13 +95,17 @@ h3{
             .img-contenedor{
                 // width: auto;
                 height: 200px;
-                background: variable.$scroll-color;
+                background: variable.$bck;
                 border: 3px solid variable.$black;
                 border-radius: 10px;
                 overflow: hidden;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                img{
+                    width: 100%;
+                    // height: 100%;
+                }
             }
             .precios{
                 display: flex;
@@ -137,7 +142,12 @@ h3{
                 width: 400px;
                 padding: 10px 15px;
                 border: 3px solid variable.$blue;
+                color: variable.$blue;
                 border-radius: 30px;
+            }
+            input::placeholder{
+                color: variable.$blue;
+                font-weight: bold;
             }
         }
         .btn{

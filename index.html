@@ -23,7 +23,7 @@
             <div class="bloque_producto">
                 <h2>MIS PRODUCTOS:</h2>
                 <div class="contenedor_productos" data-producto>
-                    <div class="card">
+                    <!-- <div class="card">
                         <div class="img-contenedor">
                             <img src="" alt="imagen_del_producto">
                         </div>
@@ -32,21 +32,20 @@
                             <h4>$ 60</h4>
                             <i class="bi bi-trash3-fill"></i>
                         </div>
-                    </div>
-                    
+                    </div> -->
                 </div>
             </div>
             <div class="bloque_formulario">
                 <h2>AGREGAR <br> PRODUCTO:</h2>
                 <form  data-formulario>
                     <div class="campos">
-                        <input type="text" name="name" id="name" placeholder="nombre..." required>
-                        <input type="number" name="valor" id="valor" placeholder="precio..." required>
-                        <input type="url" name="url" id="url" placeholder="imagen..." required>
+                        <input type="text" name="name" id="name" placeholder="nombre..."  data-name>
+                        <input type="number" name="valor" id="valor" placeholder="precio..."  data-price>
+                        <input type="url" name="url" id="url" placeholder="imagen..."  data-url>
                     </div>
                     <div class="btn">
                         <button type="submit">Enviar</button>
-                        <button type="button">Limpiar</button>
+                        <button type="reset" data-limpiar>Limpiar</button>
                     </div>
                 </form>
             </div>
@@ -67,5 +66,3 @@
     <script type="module" src="script.js"></script>
 </body>
 </html>
-
-<!-- 2:15 / 78% -->

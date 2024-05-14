@@ -86,13 +86,16 @@ h3 {
 }
 .bloque_producto .contenedor_productos .card .img-contenedor {
   height: 200px;
-  background: #D6D6D6;
+  background: #FFFFFF;
   border: 3px solid #000000;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.bloque_producto .contenedor_productos .card .img-contenedor img {
+  width: 100%;
 }
 .bloque_producto .contenedor_productos .card .precios {
   display: flex;
@@ -125,7 +128,12 @@ h3 {
   width: 400px;
   padding: 10px 15px;
   border: 3px solid #03318C;
+  color: #03318C;
   border-radius: 30px;
+}
+.bloque_formulario [data-formulario] .campos input::placeholder {
+  color: #03318C;
+  font-weight: bold;
 }
 .bloque_formulario [data-formulario] .btn {
   display: flex;
