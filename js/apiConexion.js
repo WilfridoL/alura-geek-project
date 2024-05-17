@@ -1,11 +1,12 @@
 async function productos(){
-    const API = await fetch("https://faker-api-rouge.vercel.app/alura-geek-api.json");
+    const API = await fetch("http://localhost:3000/productos");
     const ConxionConvertida = await API.json();
     return ConxionConvertida;
 }
 
 async function publicarProductos(name,price,url){
-    const API = await fetch("http://localhost:5501/productos",{
+    console.log('pepe enviado');
+    const API = await fetch("http://localhost:3000/productos",{
         method: "POST",
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify({
@@ -18,11 +19,16 @@ async function publicarProductos(name,price,url){
     return ConxionConvertida;
 }
 
-// async function sacarID(){
-//     const API = await fetch("http://localhost:5501/productos");
-//     const ConxionConvertida = await API.json();
-//     return ConxionConvertida.id;
-// }
+async function elimanarProducto (id){
+    const API = await fetch(`http://localhost:3000/productos/${id}`,{
+        method: "DELETE",
+        headers:{"Content-Type":"application/json"}
+    });
+    const ConxionConvertida = await API.json();
+    return ConxionConvertida;
+}
+
+elimanarProducto("e852")
 
 export const importarConexion = {
     productos, publicarProductos
