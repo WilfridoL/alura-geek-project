@@ -1,1 +1,0 @@
-// modularizar script de publicar video

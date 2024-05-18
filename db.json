@@ -1,34 +1,10 @@
 {
   "productos": [
     {
-      "id": "1",
-      "name": "Bate de béisbol",
-      "price": "20",
-      "url": "https://deportesregol.com/wp-content/uploads/2023/02/756302_Bate_Beisbol_Caiman_Aluminio_28pulgadas_Tamaco_.jpg"
-    },
-    {
-      "id": "2",
-      "name": "Set De Mancuernas Con Peso Ajustable",
-      "price": "68",
-      "url": "https://http2.mlstatic.com/D_NQ_NP_972482-MLU71707003074_092023-O.webp"
-    },
-    {
-      "id": "3",
-      "name": "7 esferas del dragon",
-      "price": "82",
-      "url": "https://falabella.scene7.com/is/image/FalabellaCO/gsc_122069838_3218222_1?wid=800&hei=800&qlt=70"
-    },
-    {
-      "id": "4",
-      "name": "Sony PlayStation 5 Slim 1TB Digital color blanco",
-      "price": "499",
-      "url": "https://http2.mlstatic.com/D_NQ_NP_970771-MLA73347645092_122023-O.webp"
-    },
-    {
-      "id": "5",
-      "name": "Disco Solido Ssd 1tb Crucial P3 Plus M.2 Nvme",
-      "price": "48",
-      "url": "https://http2.mlstatic.com/D_NQ_NP_935787-MLU75289120347_032024-O.webp"
+      "id": "b6c8",
+      "name": "ñ",
+      "price": "5",
+      "url": "https://http2.mlstatic.com/D_NQ_NP_787562-MLU73884930285_012024-O.webp"
     }
   ]
 }

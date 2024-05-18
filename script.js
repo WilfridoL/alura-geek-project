@@ -1,16 +1,10 @@
 import { importarConexion } from "./js/apiConexion.js";
 import { generarCard } from "./js/generarCard.js";
-// import { subirProducto } from "./js/publicarProducto.js";
-
-// console.log(importarConexion.productos());
 
 // variables exportadas
 
 export const productContainer = document.querySelector('[data-producto]');
 const formProduct = document.querySelector('[data-formulario]');
-// const btnBorrarProducto = document.querySelector('.bi-trash3-fill');
-
-// console.log(importarConexion.sacarID());
 
 // llamadas de funciones
 async function subirProducto(e) {
@@ -24,5 +18,18 @@ async function subirProducto(e) {
 }
 
 formProduct.addEventListener('submit', e => subirProducto(e));
+
+// Detectar y eliminar card
+
+productContainer.addEventListener('click', function(event) {
+    if (event.target && event.target.matches('[data-eliminar]')) {
+        const card = event.target.closest('.card'); 
+        const cardId = card ? card.id : null;
+        if (cardId) {
+            console.log(`Se hizo clic en el botón de eliminar de la tarjeta con id: ${cardId}`);
+            importarConexion.elimanarProducto(cardId)
+        }
+    }
+});
 
 generarCard();
