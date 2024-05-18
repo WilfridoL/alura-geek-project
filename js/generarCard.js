@@ -31,6 +31,6 @@ export async function generarCard(){
             productContainer.appendChild(createCard(invertirOrden.id ,invertirOrden.name, invertirOrden.price, invertirOrden.url));
         }    
     } catch (error) {
-        console.log(`Ha ocurrido un error de tipo: ${error}`);
+        console.log(`Ha ocurrido un error tipo: ${error}`);
     }
 }

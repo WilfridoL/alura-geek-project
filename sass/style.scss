@@ -57,7 +57,7 @@ h3{
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     // flex-direction: column-reverse;
     padding: 50px 0px;
     // gap: 70px;
@@ -69,20 +69,22 @@ h3{
 .bloque_producto{
     // width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 20px;
     padding:0px 35px;
     flex-direction: column;
     .contenedor_productos{
-        width: 700px;
+        width: 750px;
         height: 100vh;
         display: flex;
         flex-grow: 1;
         flex-wrap: wrap;
         // flex-direction: row-reverse;
-        gap: 16px;
+        padding:15px;
+        gap:50px 10px;
         overflow-y:scroll;
+        box-shadow:-12px 10px 5.8px rgba(0, 0, 0, 0.25);
         .card{
             width: 180px;
             height: 260px;
@@ -94,6 +96,7 @@ h3{
             display: flex;
             flex-direction: column;
             gap: 10px;
+            box-shadow:-5px 6px 3.3px rgba(0, 0, 0, 0.25);
             .img-contenedor{
                 // width: auto;
                 height: 200px;
@@ -118,6 +121,19 @@ h3{
                 }
             }
         }
+    }
+    .contenedor_productos::-webkit-scrollbar{
+        appearance: none;
+        // background-color: red;
+    }
+    .contenedor_productos::-webkit-scrollbar:vertical{
+        width: 8px;
+        // border-radius: 50px;
+    }
+    .contenedor_productos::-webkit-scrollbar-thumb {
+        background-color: variable.$scroll-color;
+        border-radius: 20px;
+        // border: 2px solid #f1f2f3;
     }
 }
 
@@ -185,10 +201,32 @@ h3{
     padding: 64px 0px;
 }
 
-@media (max-width:768px) {
-    .contenido{
-        align-items: center;
-        flex-direction: column-reverse;
-        gap: 70px;
-    }    
+
+@media (min-width:1980px){
+    .bloque_producto{
+        width: 100%;
+        height: 100%;
+    .contenedor_productos {
+            width: 100%;
+        }
+    }
 }
+
+// futura version mobile
+
+// @media (max-width:1024px) {
+//     .contenido{
+//         align-items: center;
+//         flex-direction: column-reverse;
+//         gap: 70px;
+//     }    
+//     .bloque_producto{
+//         .contenedor_productos{
+//             width: 100%;
+//             .card{
+//                 width: 160px;
+//                 height: 230px;
+//             }
+//         }
+//     }
+// }
